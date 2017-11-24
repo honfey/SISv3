@@ -5,7 +5,96 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="09e316317eea4b46950b5263b9f9ae38" Name="Diagram1">
-        <EntityTypeShape EntityType="SISv3dBModel.Test" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISv3dBModel.Test" Width="1.5" PointX="1.125" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SISv3dBModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Address" Width="1.5" PointX="14.25" PointY="24" />
+        <EntityTypeShape EntityType="SISv3dBModel.AspNetRoles" Width="1.5" PointX="3.75" PointY="2.5" />
+        <EntityTypeShape EntityType="SISv3dBModel.AspNetUserClaims" Width="1.5" PointX="8.25" PointY="3.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.AspNetUserLogins" Width="1.5" PointX="8.25" PointY="1" />
+        <EntityTypeShape EntityType="SISv3dBModel.AspNetUsers" Width="1.5" PointX="6" PointY="1.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.AttendancePerDay" Width="1.5" PointX="17.25" PointY="24.125" />
+        <EntityTypeShape EntityType="SISv3dBModel.BankName" Width="1.5" PointX="12" PointY="9.125" />
+        <EntityTypeShape EntityType="SISv3dBModel.Batch" Width="1.5" PointX="13.5" PointY="43.5" />
+        <EntityTypeShape EntityType="SISv3dBModel.Certification" Width="1.5" PointX="17.25" PointY="29.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.CertificationBody" Width="1.5" PointX="11.25" PointY="47.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Classroom" Width="1.5" PointX="18" PointY="16.125" />
+        <EntityTypeShape EntityType="SISv3dBModel.Country" Width="1.5" PointX="12" PointY="12.5" />
+        <EntityTypeShape EntityType="SISv3dBModel.Course" Width="1.5" PointX="13.5" PointY="47.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.Enrollment" Width="1.5" PointX="11.25" PointY="30.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.Holiday" Width="1.5" PointX="2.75" PointY="5.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.KnowFrom" Width="1.5" PointX="11.25" PointY="39.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.MarkingSchema" Width="1.5" PointX="14.25" PointY="57.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Module" Width="1.5" PointX="15.75" PointY="51.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.Nationality" Width="1.5" PointX="3.75" PointY="21" />
+        <EntityTypeShape EntityType="SISv3dBModel.Package" Width="1.5" PointX="15.75" PointY="45.5" />
+        <EntityTypeShape EntityType="SISv3dBModel.PackageModule" Width="1.5" PointX="18" PointY="47.5" />
+        <EntityTypeShape EntityType="SISv3dBModel.Parent" Width="1.5" PointX="6" PointY="23.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Payment" Width="1.5" PointX="14.25" PointY="19.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Religion" Width="1.5" PointX="3.75" PointY="25" />
+        <EntityTypeShape EntityType="SISv3dBModel.Result" Width="1.5" PointX="16.5" PointY="34.25" />
+        <EntityTypeShape EntityType="SISv3dBModel.ResultPackage" Width="1.5" PointX="12" PointY="55.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.S_Education" Width="1.5" PointX="11.25" PointY="18.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.S_Result" Width="1.5" PointX="13.5" PointY="16" />
+        <EntityTypeShape EntityType="SISv3dBModel.SchemaSetting" Width="1.5" PointX="12" PointY="60" />
+        <EntityTypeShape EntityType="SISv3dBModel.State" Width="1.5" PointX="12" PointY="35.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.Student" Width="1.5" PointX="9" PointY="23.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.sysdiagrams" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="SISv3dBModel.T_Education" Width="1.5" PointX="14.25" PointY="30.25" />
+        <EntityTypeShape EntityType="SISv3dBModel.Timetable" Width="1.5" PointX="20.25" PointY="24.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.TimetablePerDay" Width="1.5" PointX="22.5" PointY="24.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.Trainer" Width="1.5" PointX="12" PointY="23.375" />
+        <EntityTypeShape EntityType="SISv3dBModel.WorkingExperience" Width="1.5" PointX="17.25" PointY="19.625" />
+        <EntityTypeShape EntityType="SISv3dBModel.Year" Width="1.5" PointX="9" PointY="18.75" />
+        <AssociationConnector Association="SISv3dBModel.FK_Address_Country" />
+        <AssociationConnector Association="SISv3dBModel.FK_Address_Parent" />
+        <AssociationConnector Association="SISv3dBModel.FK_Address_State" />
+        <AssociationConnector Association="SISv3dBModel.FK_Address_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_Address_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SISv3dBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="SISv3dBModel.FK_AttendancePerDay_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_AttendancePerDay_TimetablePerDay" />
+        <AssociationConnector Association="SISv3dBModel.FK_Payment_BankName" />
+        <AssociationConnector Association="SISv3dBModel.FK_Batch_Year" />
+        <AssociationConnector Association="SISv3dBModel.FK_Package_Batch" />
+        <AssociationConnector Association="SISv3dBModel.FK_ResultPackage_Batch" />
+        <AssociationConnector Association="SISv3dBModel.FK_Certification_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_Certification_Year" />
+        <AssociationConnector Association="SISv3dBModel.FK_Course_CertificationBody" />
+        <AssociationConnector Association="SISv3dBModel.FK_Timetable_Classroom" />
+        <AssociationConnector Association="SISv3dBModel.FK_Package_Course" />
+        <AssociationConnector Association="SISv3dBModel.FK_ResultPackage_Course" />
+        <AssociationConnector Association="SISv3dBModel.FK_Enrollment_Package" />
+        <AssociationConnector Association="SISv3dBModel.FK_Enrollment_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_Result_Enrollment" />
+        <AssociationConnector Association="SISv3dBModel.FK_KnowFrom_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_MarkingSchema_ResultPackage" />
+        <AssociationConnector Association="SISv3dBModel.FK_MarkingSchema_SchemaSetting" />
+        <AssociationConnector Association="SISv3dBModel.FK_Result_MarkingSchema" />
+        <AssociationConnector Association="SISv3dBModel.FK_PackageModule_Module" />
+        <AssociationConnector Association="SISv3dBModel.FK_ResultPackage_Module" />
+        <AssociationConnector Association="SISv3dBModel.FK_Parent_Nationality" />
+        <AssociationConnector Association="SISv3dBModel.FK_Student_Nationality" />
+        <AssociationConnector Association="SISv3dBModel.FK_Trainer_Nationality" />
+        <AssociationConnector Association="SISv3dBModel.FK_PackageModule_Package" />
+        <AssociationConnector Association="SISv3dBModel.FK_Timetable_PackageModule" />
+        <AssociationConnector Association="SISv3dBModel.FK_Parent_Religion" />
+        <AssociationConnector Association="SISv3dBModel.FK_Parent_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_Payment_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_Student_Religion" />
+        <AssociationConnector Association="SISv3dBModel.FK_Trainer_Religion" />
+        <AssociationConnector Association="SISv3dBModel.FK_S_Education_Student" />
+        <AssociationConnector Association="SISv3dBModel.FK_S_Education_Year" />
+        <AssociationConnector Association="SISv3dBModel.FK_S_Result_S_Education" />
+        <AssociationConnector Association="SISv3dBModel.FK_T_Education_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_T_Education_Year" />
+        <AssociationConnector Association="SISv3dBModel.FK_Timetable_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_TimetablePerDay_Timetable" />
+        <AssociationConnector Association="SISv3dBModel.FK_TimetablePerDay_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_TimetablePerDay_Trainer1" />
+        <AssociationConnector Association="SISv3dBModel.FK_WorkingExperience_Trainer" />
+        <AssociationConnector Association="SISv3dBModel.FK_WorkingExperience_Year" />
+        <AssociationConnector Association="SISv3dBModel.AspNetUserRoles" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

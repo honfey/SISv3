@@ -26,5 +26,44 @@ namespace SISv3.Models
         }
     
         public virtual DbSet<Test> Test { get; set; }
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
+        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public virtual DbSet<AttendancePerDay> AttendancePerDay { get; set; }
+        public virtual DbSet<BankName> BankName { get; set; }
+        public virtual DbSet<Batch> Batch { get; set; }
+        public virtual DbSet<Certification> Certification { get; set; }
+        public virtual DbSet<CertificationBody> CertificationBody { get; set; }
+        public virtual DbSet<Classroom> Classroom { get; set; }
+        public virtual DbSet<Country> Country { get; set; }
+        public virtual DbSet<Course> Course { get; set; }
+        public virtual DbSet<Enrollment> Enrollment { get; set; }
+        public virtual DbSet<Holiday> Holiday { get; set; }
+        public virtual DbSet<KnowFrom> KnowFrom { get; set; }
+        public virtual DbSet<MarkingSchema> MarkingSchema { get; set; }
+        public virtual DbSet<Module> Module { get; set; }
+        public virtual DbSet<Nationality> Nationality { get; set; }
+        public virtual DbSet<Package> Package { get; set; }
+        public virtual DbSet<PackageModule> PackageModule { get; set; }
+        public virtual DbSet<Parent> Parent { get; set; }
+        public virtual DbSet<Payment> Payment { get; set; }
+        public virtual DbSet<Religion> Religion { get; set; }
+        public virtual DbSet<Result> Result { get; set; }
+        public virtual DbSet<ResultPackage> ResultPackage { get; set; }
+        public virtual DbSet<S_Education> S_Education { get; set; }
+        public virtual DbSet<S_Result> S_Result { get; set; }
+        public virtual DbSet<SchemaSetting> SchemaSetting { get; set; }
+        public virtual DbSet<State> State { get; set; }
+        public virtual DbSet<Student> Student { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<T_Education> T_Education { get; set; }
+        public virtual DbSet<Timetable> Timetable { get; set; }
+        public virtual DbSet<TimetablePerDay> TimetablePerDay { get; set; }
+        public virtual DbSet<Trainer> Trainer { get; set; }
+        public virtual DbSet<WorkingExperience> WorkingExperience { get; set; }
+        public virtual DbSet<Year> Year { get; set; }
     }
 }

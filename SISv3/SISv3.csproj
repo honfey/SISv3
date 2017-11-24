@@ -176,8 +176,92 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Address.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetRoles.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaims.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogins.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUsers.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AttendancePerDay.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BankName.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Batch.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Certification.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CertificationBody.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Classroom.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Country.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Course.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\C__MigrationHistory.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Enrollment.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Holiday.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\KnowFrom.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MarkingSchema.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Module.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Nationality.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Package.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PackageModule.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Parent.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Payment.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Religion.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Result.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ResultPackage.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SchemaSetting.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\SISv3Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -193,7 +277,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SISv3Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\State.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Student.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\S_Education.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\S_Result.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Test.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Timetable.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TimetablePerDay.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Trainer.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\T_Education.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WorkingExperience.cs">
+      <DependentUpon>SISv3Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Year.cs">
       <DependentUpon>SISv3Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
