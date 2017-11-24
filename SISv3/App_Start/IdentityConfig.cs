@@ -11,17 +11,45 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using SISv3.Models;
+using System.Net.Mail;
+using System.Web.Configuration;
+using System.Net;
+using SISv3;
 
 namespace SISv3
 {
+
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)
         {
             // Plug in your email service here to send an email.
+            var client = new SmtpClient
+            {
+                Host = WebConfigurationManager.AppSettings["mailHost"],
+                Port = Int32.Parse(WebConfigurationManager.AppSettings["mailPort"]),
+                Credentials = new NetworkCredential(
+                        WebConfigurationManager.AppSettings["mailAccount"],
+                        WebConfigurationManager.AppSettings["mailPassword"]
+                        ),
+                EnableSsl = true,
+            };
+
+            var @from = new MailAddress(WebConfigurationManager.AppSettings["mailAccount"], WebConfigurationManager.AppSettings["mailAccountName"]);
+            var to = new MailAddress(message.Destination);
+
+            var mail = new MailMessage(@from, to)
+            {
+                Subject = message.Subject,
+                Body = message.Body,
+                IsBodyHtml = true,
+            };
+
+            client.Send(mail);
             return Task.FromResult(0);
         }
     }
+}
 
     public class SmsService : IIdentityMessageService
     {
@@ -106,4 +134,4 @@ namespace SISv3
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
     }
-}
+
