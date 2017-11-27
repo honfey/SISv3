@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="09e316317eea4b46950b5263b9f9ae38" Name="Diagram1">
+      <Diagram DiagramId="09e316317eea4b46950b5263b9f9ae38" Name="Diagram1" ZoomLevel="37">
         <EntityTypeShape EntityType="SISv3dBModel.Test" Width="1.5" PointX="1.125" PointY="0.5" IsExpanded="true" />
         <EntityTypeShape EntityType="SISv3dBModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="3.75" />
         <EntityTypeShape EntityType="SISv3dBModel.Address" Width="1.5" PointX="14.25" PointY="24" />

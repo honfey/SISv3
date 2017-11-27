@@ -434,7 +434,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ModuleName" Type="nvarchar" MaxLength="50" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" />
-          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="MultipleSelect" Type="bit" />
           <Property Name="Percentage" Type="int" />
           <Property Name="CreatedDate" Type="datetime" />
           <Property Name="CreatedBy" Type="nvarchar" MaxLength="128" />
@@ -2201,6 +2201,7 @@
           <Property Name="UpdatedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
           <Property Name="Status" Type="Int32" />
           <NavigationProperty Name="MarkingSchema" Relationship="SISv3dBModel.FK_MarkingSchema_SchemaSetting" FromRole="SchemaSetting" ToRole="MarkingSchema" />
+          <Property Name="MultipleSelect" Type="Boolean" />
         </EntityType>
         <EntityType Name="State">
           <Key>
@@ -3431,13 +3432,13 @@
           <EntitySetMapping Name="SchemaSetting">
             <EntityTypeMapping TypeName="SISv3dBModel.SchemaSetting">
               <MappingFragment StoreEntitySet="SchemaSetting">
+                <ScalarProperty Name="MultipleSelect" ColumnName="MultipleSelect" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
                 <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
                 <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
                 <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
                 <ScalarProperty Name="Percentage" ColumnName="Percentage" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

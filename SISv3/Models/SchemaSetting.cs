@@ -30,6 +30,7 @@ namespace SISv3.Models
         public Nullable<System.DateTime> UpdatedDate { get; set; }
         public string UpdatedBy { get; set; }
         public Nullable<int> Status { get; set; }
+        public Nullable<bool> MultipleSelect { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MarkingSchema> MarkingSchema { get; set; }
