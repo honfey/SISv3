@@ -1,0 +1,152 @@
+﻿@model SISv3.Models.AttendancePerDay
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AttendancePerDay</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.M_IN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M_IN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.M_OUT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M_OUT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.M_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.M_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A_IN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A_IN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A_OUT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A_OUT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.A_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.A_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Marks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Marks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Remarks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Remarks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdateBy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdateBy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimetablePerDay.MorningRemark)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimetablePerDay.MorningRemark)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
